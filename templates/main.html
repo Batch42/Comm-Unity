@@ -1,0 +1,6 @@
+<form action="/your-name/" method="post">
+    {% csrf_token %}
+    {% for prop in props %}
+      <p>{{prop.text}}</p>
+    {% endfor %}
+</form>
